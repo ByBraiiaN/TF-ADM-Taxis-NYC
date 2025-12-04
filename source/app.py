@@ -210,11 +210,12 @@ elif menu == "Dashboard":
 
 # --- SECCIÓN 4: Notebook
 elif menu == "Notebook":
-    st.title("📊 Vista previo sobre el notebook Trabajado")
+    st.title("📚 Vista previa del Notebook utilizado")
     st.components.v1.html(utl.load_notebook(), height=800, scrolling=True)
 
 # Pie de página
 st.markdown("---")
 
 st.markdown("© 2025 Braian Pucheta - UCASAL - Análisis de Datos Masivos")
+
 
