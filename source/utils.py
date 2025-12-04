@@ -4,7 +4,7 @@ import streamlit as st
 
 @st.cache_data # Cache para no recargar datos cada vez que interactúas
 def load_data():
-    file_path = "../data/taxi_data_outl" 
+    file_path = "data/taxi_data_outl" 
     
     # Lógica para cargar o crear datos de prueba si no existe el archivo
     if os.path.exists(file_path) or os.path.exists(file_path + ".parquet"):
@@ -29,8 +29,9 @@ def load_data():
         return pd.DataFrame(data)
 
 def load_notebook():
-    html_path = "../notebooks/data_processing.html"
+    html_path = "notebooks/data_processing.html"
 
     with open(html_path, "r", encoding="utf-8") as f:
         html_content = f.read()
+
     return html_content        
