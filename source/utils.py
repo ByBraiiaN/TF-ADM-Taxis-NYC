@@ -28,6 +28,7 @@ def load_data():
         }
         return pd.DataFrame(data)
 
+@st.cache_data
 def load_notebook():
     html_path = "notebooks/data_processing.html"
 
@@ -35,3 +36,4 @@ def load_notebook():
         html_content = f.read()
 
     return html_content        
+
