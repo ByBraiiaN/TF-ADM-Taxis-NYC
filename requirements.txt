@@ -1,0 +1,8 @@
+streamlit
+pandas
+plotly
+pyarrow
+fastparquet
+jupyter
+nbconvert
+pyspark
