@@ -15,7 +15,7 @@ df = utl.load_data()
 
 # --- SIDEBAR
 with st.sidebar:
-    st.image("logo.jpg", width=200)
+    st.image("source/logo.jpg", width=200)
     st.title("🚖 Análisis de movilidad urbana con datos de taxis en la NYC 2024")
     st.markdown("---")
     
@@ -214,4 +214,5 @@ elif menu == "Notebook":
 
 # Pie de página
 st.markdown("---")
+
 st.markdown("© 2025 Braian Pucheta - UCASAL - Análisis de Datos Masivos")
