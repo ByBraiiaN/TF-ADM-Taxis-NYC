@@ -11,7 +11,8 @@ st.set_page_config(
 )
 
 # --- FUNCIÓN DE CARGA DE DATOS
-df = utl.load_data()
+with st.spinner("Cargando datos, por favor espere..."):
+    df = utl.load_data()
 
 # --- SIDEBAR
 with st.sidebar:
@@ -216,3 +217,4 @@ elif menu == "Notebook":
 st.markdown("---")
 
 st.markdown("© 2025 Braian Pucheta - UCASAL - Análisis de Datos Masivos")
+
